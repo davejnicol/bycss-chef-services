@@ -1,0 +1,24 @@
+@use '../abstracts' as *;
+
+.button {
+    border: 0;
+    cursor: pointer;
+    display: inline-flex;
+    line-height: 1;
+    padding: 1.125em 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.button[data-type="accent"] {
+    background-color: clr(primary, 400);
+    color: clr(neutral, 900);
+}
+.button[data-type="outline"] {
+    --outline-size: 5px;
+    
+    background: transparent;
+    color: clr(neutral, 100);
+    outline: var(--outline-size) solid clr(neutral, 100);
+    outline-offset: calc(var(--outline-size) * -1);
+}
