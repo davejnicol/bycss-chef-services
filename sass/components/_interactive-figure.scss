@@ -13,8 +13,8 @@
 
     @media (hover: hover) {
         figcaption {
-            transition: transform ease-in-out 350ms;
             transform: translateY(100%);
+            transition: transform ease-in-out 350ms;
         }
         &:hover figcaption {
             transform: translateY(0%);
