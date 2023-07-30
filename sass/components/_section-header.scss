@@ -20,4 +20,18 @@
             margin-inline: auto;
         }
     }
+    &.text-center[data-decoration="true"]::after {
+        margin-inline: auto;
+    }
+
+    p {
+        max-width: 50ch;
+
+        .text-center &  { 
+            margin-inline: auto;
+        }
+        &.text-center {
+            margin-inline: auto;
+        }
+    }
 }
