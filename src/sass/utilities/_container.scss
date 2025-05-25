@@ -11,3 +11,7 @@
 .container[data-type="wide"] {
 	--max-width: #{$container-max-width-wide};
 }
+
+.container[data-type="bleed"] {
+	--max-width: #{$container-max-width-bleed};
+}
